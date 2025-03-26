@@ -1,0 +1,108 @@
+body {
+  margin: 0;
+  font-family: sans-serif;
+}
+.navbar {
+  position: relative;
+  background-color: #4c5958;
+  padding: 10px;
+}
+.navbar__list {
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+.navbar__list-item {
+  margin: 0 10px;
+}
+.navbar__list-item a {
+  font-family: "Lato", sans-serif;
+  color: white;
+  transition: 0.2s ease;
+  text-decoration: none;
+  font-size: 18px;
+}
+.navbar__list-item a:hover {
+  color: #ff6eb9;
+}
+.navbar__icon {
+  display: inline-block;
+  color: white;
+  font-size: 25px;
+  transition: 2s ease;
+}
+.navbar__icon:hover {
+  transform: none;
+}
+#hero {
+  background-image: url(assets/mountain1.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  margin: 0;
+  padding: 0;
+  height: 300px;
+  display: block;
+}
+main {
+  padding: 2.5vh 10vw;
+  text-align: left;
+  color: #414a49;
+  font-size: 20px;
+  line-height: 1.6;
+}
+#page-title {
+  font-family: "Lora", serif;
+  font-size: 45px;
+}
+#skier-image {
+  float: left;
+  width: 45%;
+  margin-right: 20px;
+}
+main p {
+  font-family: "Lato", sans-serif;
+  line-height: 30px;
+  font-size: 18px;
+}
+
+@media (min-width: 768px) {
+  main {
+    text-align: left;
+    font-size: 20px;
+    line-height: 1.6;
+  }
+
+  #page-title {
+    font-size: 45px;
+  }
+
+  #skier-image {
+    float: left;
+    width: 45%;
+    margin-right: 20px;
+  }
+
+  #hero {
+    height: 300px;
+    display: block;
+  }
+}
+
+@media (max-width: 767px) {
+  .navbar__list-item a:hover,
+  .navbar__icon:hover {
+    color: white;
+    transform: none;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  #hero {
+    background-attachment: scroll;
+  }
+  .navbar__icon:hover {
+    transform: none;
+  }
+}
